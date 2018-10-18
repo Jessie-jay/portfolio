@@ -61,7 +61,7 @@ class About extends React.Component {
             </a></div>
             </div> 
             <div className="work"><a href="/works">
-            <div className="work"> Experience <a className="down"></a></div> 
+            <div className="work"> Work <i className="down"></i></div> 
             </a></div> 
             <div className="blank3"></div> 
             
