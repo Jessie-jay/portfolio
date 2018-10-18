@@ -1,0 +1,116 @@
+.all{
+        display: grid; 
+        grid-gap: 5px; 
+        height: 150%; 
+        width: 100%; 
+        grid-gap: 5px;  
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        grid-template-rows:    100px 100px 100px 100px 100px ; 
+        margin: 10px;
+    }  
+    .brief{ 
+        display: grid;  
+        grid-column: 5/8; 
+        grid-row: 1/2; 
+        justify-content: center;
+        align-content: center;
+        font-family: Graphik;
+        font-size: 20px;
+    } 
+    .ash{
+        display: grid;  
+        grid-column: 2/4; 
+        grid-row: 2/4; 
+        background-color:  rgba(196, 196, 196, 0.3);
+    }
+    .black1{
+        display: grid;  
+        grid-column: 4/6; 
+        grid-row: 2/4; 
+        justify-content: center;
+        text-align: center;
+    }
+    .ash1{
+        display: grid;  
+        grid-column: 6/8; 
+        grid-row: 2/4; 
+        background-color: rgba(196, 196, 196, 0.3);
+    }
+    .meet{
+        display: grid;  
+        grid-column: 1/2; 
+        grid-row: 5/6; 
+        background-color: #1B25FB;
+        color: white;
+        justify-content: center;
+        Font-family: Graphik;
+        font-size: 20px;
+    }
+    .black2{
+        display: grid;  
+        grid-column: 2/4; 
+        grid-row: 4/6; 
+       justify-content: center;
+       text-align: center;
+    }
+    .ash2{
+        display: grid;  
+        grid-column: 4/6; 
+        grid-row: 4/6; 
+        background-color: rgba(196, 196, 196, 0.3);
+    }
+    .black3{
+        display: grid;  
+        grid-column: 6/8; 
+        grid-row: 4/6; 
+        justify-content: center;
+        text-align: center;
+    }
+    .last{
+        display: grid;
+    width: 15px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    /* margin-bottom: auto; */
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+    @media screen and ( max-width: 500px) {
+    .ash, .ash1, .ash2{
+        display: none;
+    }
+    .brief{ 
+        display: grid;  
+        grid-column: 1/3; 
+        grid-row: 1/2; 
+        justify-content: center;
+        align-content: center;
+        font-family: Graphik;
+        font-size: 20px;
+    } 
+     .black3{
+        display: grid;  
+        grid-column: 1/3; 
+    }
+    .black1{
+        display: grid;  
+        grid-column: 1/3; 
+        /* grid-row: 7/8;  */
+       /* justify-content: center; */
+       /* text-align: center; */
+    }
+    .black2{
+        display: grid;  
+        grid-column: 1/3; 
+        grid-row: 7/8; 
+       /* justify-content: center; */
+       /* text-align: center; */
+    }
+
+    .meet{
+        display: grid;  
+        grid-column: 1/2; 
+        grid-row: 9; 
+    }
+    }

@@ -1,0 +1,232 @@
+.container{
+    display: grid;
+     /* padding:50px; */
+    height: 150%;
+   width: 100%;
+    grid-gap: 5px; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    /* repeat(auto-fit, minmax(100px, 1fr)); */ 
+    grid-template-rows:  repeat(200px, 1fr); 
+    /* grid-template-areas: "s s . . . . c ."
+                         "n n n n n . . ."
+                         "a . . . a a a ."
+                         "a . . . s . . ."
+                         "l . . . x y z ."
+                         "l . . . . . . ."; */
+}
+/* .container:nth-child(odd){
+    background-color: black;
+}
+.container:nth-child(even){
+    background-color: red;
+} */
+.shapes>ul{
+    display: flex;
+    list-style: none;
+  }
+.shapes{
+    display: grid;
+    align-content: end;
+    grid-column: 2/3;
+    grid-row: 1/2; 
+} 
+.shape0{
+    width: 15px;
+    height: 15px;
+    background-color: #1B25FB;
+    margin-left: auto;
+}
+.shape{
+    width: 15px;
+    height: 15px;
+    background-color: #1B25FB;
+    float: left; 
+    margin-right: 5px;
+}
+.shape1{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(27,37,251,0.6);
+    margin-left: auto;
+    border: 1px solid rgba(27,37,251,0.6); 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    
+}
+.shape2{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(27,37,251,0.4);
+    margin-left: auto;
+    border: 1px solid rgba(27,37,251,0.4); 
+    border-bottom-left-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.shape3{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(27,37,251,0.2);
+    margin-left: auto;
+    border: 1px solid rgba(27,37,251,0.2);
+    border-radius: 8px;
+}
+.shape4{ 
+    width: 15px;
+    height: 15px;
+    background-color: #1B25FB;
+    border: 1px solid #1B25FB;
+    margin-left: auto;
+}
+
+.contact{
+    display: grid;
+     grid-column: 6/7;
+    grid-row: 1/2;
+    align-content: end;
+    margin-left: auto;
+    text-decoration: underline;
+    Font-family: Graphik;
+font-style: Regular;
+Font-size: 18px;
+Line-height: 20px;
+/* Align: Left */
+}
+.name{
+    display: grid;
+  grid-column: 2/8;
+  grid-row: 2/4;
+  align-content: center;
+  Font-family: Graphik;
+Font-style: Bold;
+Font-size: 80px; 
+/* Line-height: 110px; */
+/* align: Left; */
+}
+ .about{
+     display: grid;
+     /* padding: 20px; */
+     align-content: center;
+     /* font-size: 20px; */
+    grid-column: 4 / 7;
+    grid-row: 4 / 6;
+    Font-family: Graphik;
+    Font-style: Regular;
+    Font-size: 22px;
+    Line-height: 29px;
+    /* Align: Left */
+}
+.skills>ul{
+    list-style: none;
+}
+.skills{
+     grid-column: 4/5;
+    grid-row: 6/7;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.skills1, .skills2, .skills3{
+    Font-family: Graphik;
+    Font-style: Regular;
+    Font-size: 18px;
+    Line-height: 24px;
+    align-content: Left;
+    margin-top: 30px;
+}
+.skills1{
+    font-size: 20px;
+    grid-column:4/5;
+    grid-row: 7/8;
+    
+}
+.skills2{
+    grid-column: 5/6;
+    grid-row: 7/8;
+    font-size: 20px;
+}
+.skills3{
+    grid-column: 6/8;
+    grid-row: 7/8;
+    font-size: 20px;
+    align-content: left;
+}
+.learn{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 7/9;
+    /* font-size: 30px; */
+    justify-content: center;
+    background-color: #1B25FB;
+    /* padding-top: 20px; */
+    Font-family: Graphik;
+    Font-style: Medium;
+    Font-size: 24px;
+    Line-height: 32px; 
+    color: white;
+    align-content: flex-start; 
+}  
+.arrowDown{
+    /* display: grid; */
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    margin-bottom: auto;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+} 
+@media screen and ( max-width: 500px) {
+    .container{
+        display: grid;
+         /* padding:50px; */
+        height: 150%;
+       width: 100%;
+        grid-gap: 5px; 
+        /* grid-template-columns: repeat(auto-fit, minmax(2, 2fr)); 
+        grid-template-rows:  repeat(400px, 1fr);  */
+     } 
+    .about{
+        display: grid;
+        align-content: center;
+        grid-column: 1/ 4;
+        grid-row: 4 / 6;
+        Font-size: 18px;
+   } 
+    .name{
+        font-size: 40px;
+        grid-column: 1/ 4;
+    } 
+    .skills {
+        grid-column: 1/ 2;
+        grid-row: 6;
+    } 
+    .skills1{
+        grid-column: 1/2;
+        grid-row: 10;
+    }
+    .skills3{
+        grid-column: 2;
+        grid-row: 7;
+    }
+    .skills2{
+        grid-column: 2;
+        grid-row: 8/9;
+       /* margin-left: auto; */
+    } 
+     .learn{
+        grid-column: 2;
+        grid-row: 10; 
+    } 
+    /* .name{
+        grid-column: 1/-1;
+        grid-row: 2/4;
+        align-content: flex-end;
+        justify-self: end;
+    }  */ 
+    .contact{
+        grid-column: 2/3;
+    }
+     .shapes{
+         display: none;
+     }
+} 
