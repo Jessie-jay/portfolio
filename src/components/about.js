@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css';
+import {Link} from 'react-router-dom';
 // import './home.css';
 import pic3 from '../pictures/pic3.jpeg'; 
 import pic1 from '../pictures/pic1.jpg'; 
@@ -60,9 +61,9 @@ class About extends React.Component {
             <img src={linked} alt=""/>
             </a></div>
             </div> 
-            <div className="work"><a href="/works">
-            <div className="work"> Work <i className="down"></i></div> 
-            </a></div> 
+            <div className="work"><Link to="/works">
+            <div className="work"> Work</div> 
+            </Link></div> 
             <div className="blank3"></div> 
             
          </div>

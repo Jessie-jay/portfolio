@@ -26,10 +26,10 @@ margin-bottom: 50px;
     border-left: none;
     border-right: none;
     border-top: none;
-    float: right;
-    /* margin-right: 100px; */
+    /* float: right; */
+    margin-left: 200px;
     padding-right: 0px;
-    width: 600px;
+    width: 250px;
     /* height: 200px; */
 }
 #blog_post_email{

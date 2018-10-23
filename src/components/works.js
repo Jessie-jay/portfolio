@@ -1,5 +1,6 @@
 import React from 'react';
 import './works.css';
+import {Link} from 'react-router-dom';
 import futo from '../pictures/FUTO-LOGO.jpg'; 
 import niit from '../pictures/NIIT-Logo.jpg'; 
 import genesys from '../pictures/genesys-logo.png'; 
@@ -24,9 +25,9 @@ class Works extends React.Component {
 
             <div className="ash1"></div>
             
-            <div className="meet"><a href="/feedback">
-            <div className="meet">Contact<i className="last"></i></div> 
-            </a></div> 
+            <div className="meet"><Link to="/feedback">
+            <div className="meet">Contact</div> 
+            </Link></div> 
 
             <div className="black2">
                 <img src={niit} alt=""/>
@@ -47,4 +48,4 @@ class Works extends React.Component {
   }
 
 
-export default Works;
+export default Works;   

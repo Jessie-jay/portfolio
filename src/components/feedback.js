@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import './feedback.css';
 
 class Form extends React.Component {
@@ -65,7 +66,7 @@ console.log(this.state);
                                    required="required"
                                    value={this.state.name}
                                    onChange={this.handleNameChange}
-                                   placeholder="Name"
+                                   placeholder="name"
                             />
                     </span>
                     
@@ -75,7 +76,7 @@ console.log(this.state);
                                  required="required"
                                    value={this.state.body}
                                    onChange={this.handleMessageChange}
-                                   placeholder="Message"
+                                   placeholder="message"
                            />
                     </span>
                    
@@ -85,7 +86,7 @@ console.log(this.state);
                                    required="required"
                                    value={this.state.email}
                                    onChange={this.handleEmailChange}
-                                   placeholder="Email"
+                                   placeholder="email"
                                    />
                      </div>
                    
@@ -96,9 +97,8 @@ console.log(this.state);
                         </div>
                     
                 </div>
-                <a href="/home"><div id="top">
-                <i className="up"></i>
-               Home</div></a>
+                <Link to="/home"><div id="top">
+               Home</div></Link>
             </form>
         );
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './home.css';
 import Group3 from '../pictures/Group3.png'; 
 import Group3a from '../pictures/Group3a.png';
@@ -8,7 +9,7 @@ class Home extends React.Component {
    
     render() {
       return (
-        <div className="container">
+        <div className="flip">
             <div className="shapes">
                 <ul>
                     <li className="shape0"/> 
@@ -17,9 +18,9 @@ class Home extends React.Component {
                     <li className="shape3"/> 
                 </ul> 
             </div> 
-            <div className="contact"><a href="/feedback">CONTACT</a></div> 
+            <div className="contact"><Link to="/feedback">CONTACT</Link></div> 
             <div className="name">Jacinta Chianumba</div>  
-            <div className="about">
+            <div className="about"> 
                 I am a Front-end software Developer, currently a student at
                 Federal University of Technology, Owerri. I am passionate about
                 creating solutions to problems in my community using Technology.
@@ -43,9 +44,9 @@ class Home extends React.Component {
                 <p>Drawing</p>
             </div> 
             <div className="learn">
-            <a href="/about"><span className="learn">
-               Learn <br/>More<span className="arrowDown"></span>
-            </span></a> 
+            <Link to="/about"><span className="learn">
+               Learn <br/>More
+           </span></Link>
             </div>
          </div>
       )

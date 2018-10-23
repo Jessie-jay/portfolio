@@ -1,8 +1,8 @@
-.container{
+.flip{
     display: grid;
      /* padding:50px; */
-    height: 150%;
-   width: 100%;
+    height: 100%; 
+   width: 100%; 
     grid-gap: 5px; 
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
     /* repeat(auto-fit, minmax(100px, 1fr)); */ 
@@ -94,7 +94,7 @@ Line-height: 20px;
 }
 .name{
     display: grid;
-  grid-column: 2/8;
+  grid-column: 3/8;
   grid-row: 2/4;
   align-content: center;
   Font-family: Graphik;
@@ -152,8 +152,8 @@ Font-size: 80px;
 }
 .learn{
     display: grid;
-    grid-column: 1/2;
-    grid-row: 7/9;
+    grid-column: 2;
+    grid-row: 8/9;
     /* font-size: 30px; */
     justify-content: center;
     background-color: #1B25FB;
@@ -163,7 +163,7 @@ Font-size: 80px;
     Font-size: 24px;
     Line-height: 32px; 
     color: white;
-    align-content: flex-start; 
+    /* align-content: flex-start;  */
 }  
 .arrowDown{
     /* display: grid; */
