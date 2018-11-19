@@ -52,6 +52,7 @@ console.log(this.state);
       .then(res => {
         console.log(res);
         console.log(res.data);
+        this.props.history.push("/home");
       })
     }
 
@@ -71,7 +72,7 @@ console.log(this.state);
                     </span>
                     
                     <span >
-                         <input type="text"
+                         <textarea type="text"
                                    id="blog_post_message"
                                  required="required"
                                    value={this.state.body}
@@ -99,6 +100,7 @@ console.log(this.state);
                 </div>
                 <Link to="/home"><div id="top">
                Home</div></Link>
+              
             </form>
         );
     }

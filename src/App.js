@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from './components/home.js'; 
 import About from './components/about.js'; 
 import Works from './components/works';
-import Contact from './components/contact';
 import Form from './components/feedback';
+// import TryMoi from './components/tryMoi';
 // import PropTypes from 'prop-types';
 
 class App extends Component {
@@ -19,11 +19,10 @@ class App extends Component {
                 <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/works" component={Works} />
-                <Route path="/contact" component={Contact} /> 
-                <Route path="/feedback" component={Form}/>
-                {/* <FeedbackForm env={this.props.env} /> */}
-          </Switch> 
-          {/* <FeedbackForm env={this.props.env} />  */}
+               <Route path="/feedback" component={Form}/>
+               {/* <Route path="/tryMoi" component={TryMoi} /> */}
+           </Switch> 
+         
          </div> 
          
       </BrowserRouter>
@@ -31,8 +30,5 @@ class App extends Component {
     );
   }
 }
-// App.propTypes = {
-//   env: PropTypes.object.isRequired
-// };
 
 export default App;

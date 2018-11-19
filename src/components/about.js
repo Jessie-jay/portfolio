@@ -12,7 +12,9 @@ import twitter from '../pictures/twitter.png';
 import facebook from '../pictures/facebook.jpg'; 
 
 class About extends React.Component { 
-   
+   state = {
+     imgFb: facebook
+   }
     render() {
       return (
         <div className="contain">
@@ -22,7 +24,7 @@ class About extends React.Component {
             </div> 
 
             <div className="facebook">
-              <a href="https://www.facebook.com/jessie.chianumba"><img src={facebook} alt="facebook"/> </a>
+              <a href="https://www.facebook.com/jessie.chianumba"><img src={this.state.imgFb} alt="facebook"/> </a>
             </div> 
 
             <div className="at">
